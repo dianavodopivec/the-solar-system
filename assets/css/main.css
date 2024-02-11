@@ -281,6 +281,7 @@ main {
     transform: var(--earth-tilt) scale(1.2);
     box-shadow: #3c434389 0px 0px 40px 2px, #232323a7 0px 18px 80px -28px;
     animation: planetRotate calc(var(--earth-day) * 0.1s) linear infinite;
+    -webkit-animation: planetRotate calc(var(--earth-day) * 0.1s) linear infinite;
 }
 
 .shadow-earth {
@@ -291,7 +292,7 @@ main {
     left: 30px;
     border-radius: 50%;
     z-index: 1;
-    box-shadow: inset 50px 0px 15px -2px #1c1c1d55, inset -70px 0px 50px 0px #020203ed, -5px 0px 30px -4px #021215;
+    box-shadow: inset 15px 0px 20px -2px rgb(24, 24, 28), inset -70px 0px 50px 0px #0d0d12, -5px 0px 30px -4px rgb(12, 32, 40);
 }
 
 .light-earth {

@@ -1,4 +1,5 @@
 import { 
-    clockFuncionality
+    clockFuncionality,
+    earthChanges
 } from "/assets/scripts/clock.js";
 
