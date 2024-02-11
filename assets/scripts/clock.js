@@ -1,5 +1,4 @@
 const $containerClock = document.getElementById("clock");
-const $date = document.getElementById("date")
 let runningTime 
 
 const clockFuncionality = () => {
@@ -14,3 +13,6 @@ runningTime = setInterval(() => {
     clockFuncionality();
 }, 1000);
 
+export { 
+    clockFuncionality
+};
