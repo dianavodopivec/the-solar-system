@@ -229,12 +229,14 @@ main {
     border: 1px solid rgba(68, 69, 69, 0.843);
     border-radius: 50%;
     overflow: hidden;
+    filter: brightness(150%);
     background-image: var(--earth-image);
     background-size: cover;
     transform: var(--earth-tilt) scale(1.2);
     box-shadow: #3c434389 0px 0px 40px 2px, #232323a7 0px 18px 80px -28px;
     animation: planetRotate calc(var(--earth-day) * 0.1s) linear infinite;
     -webkit-animation: planetRotate calc(var(--earth-day) * 0.1s) linear infinite;
+    -webkit-filter: brightness(150%);
 }
 
 .shadow-earth {
