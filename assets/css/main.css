@@ -5,7 +5,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     background: #282537;
     background-image: -webkit-radial-gradient(
       bottom,
