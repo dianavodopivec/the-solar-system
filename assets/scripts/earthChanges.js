@@ -1,4 +1,4 @@
-const $earth = document.getElementById("earth");
+/*const $earth = document.getElementById("earth");
 
 const earthChanges = () => {
     const date = new Date();
@@ -14,4 +14,4 @@ const earthChanges = () => {
 
 export { 
     earthChanges
-};
+};*/

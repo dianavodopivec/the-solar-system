@@ -194,3 +194,34 @@ p {
     transform: translate3d(0, 8%, 0);
   }
 }
+
+/* SCROLL GSAP FLEX  */
+
+.section-scroll {
+  height: 400vh;
+}
+
+.wrap-scroll, .d_scroll {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrap-scroll {
+  width: 400vw;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.d_scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Para que todas las secciones que no tengan dicha clase, sean contenedores de flexbox con su contenido centrado tanto horizontal vertical*/
+.d_scroll, section:not(.section-scroll) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

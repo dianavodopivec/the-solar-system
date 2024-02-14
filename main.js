@@ -2,13 +2,13 @@ import {
     clockFuncionality,
 } from "./assets/scripts/clock.js";
 
-import { earthChanges 
-} from "./assets/scripts/earthChanges.js";
+/*import { earthChanges 
+} from "./assets/scripts/earthChanges.js";*/
 
 //To execute js code that interacts with the DOM
 document.addEventListener("DOMContentLoaded", e => {
     clockFuncionality();
-    earthChanges();
+    //earthChanges();
 })
 
 //---------- GSAP TESTING ----------//
@@ -30,3 +30,24 @@ document.addEventListener("DOMContentLoaded", e => {
 //   rotation: 0,
 //   duration: 4,
 // });
+
+gsap.registerPlugin(ScrollTrigger);
+
+let tl = gsap.timeline({scrollTrigger: {
+  trigger: '.section-scroll',
+  start: 'top top',
+  end: 'bottom bottom',
+  scrub: 0
+}});
+
+tl.to(".wrap-scroll", {
+  x: '-300vw',
+  ease: 'none',
+  duration: 2
+});
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+})
+
+gsap.ticker.lagSmoothing(0);
