@@ -28,13 +28,6 @@ main {
 }
 
 
-.card {
-    height: 400px;
-    width: 300px;
-    border-radius: 30px;
-    animation: floatDown 1.5s ease-in-out infinite alternate;
-}
-
 /* THE SUN */
 
 /*.card-sun {
