@@ -44,7 +44,7 @@ main {
     border-radius: 30px;
     animation: floatDown 1.5s ease-in-out infinite alternate;
 } */
-
+/* 
 .sun {
     height: 200px;
     width: 200px;
@@ -85,7 +85,7 @@ main {
     z-index: 1;
     border-radius: 50%;
     background: radial-gradient( circle at 40% 50%, rgba(252, 187, 153, 0.647) 0%, rgba(255, 255, 255, 0) 65% );
-}
+} */
 
 /* MERCURY */
 
