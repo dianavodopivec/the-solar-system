@@ -46,8 +46,4 @@ tl.to(".wrap-scroll", {
   duration: 2
 });
 
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000);
-})
-
 gsap.ticker.lagSmoothing(0);
