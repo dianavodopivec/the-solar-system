@@ -1,0 +1,25 @@
+.container-planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: -webkit-radial-gradient(
+        bottom,
+        circle cover,
+        #101010 0%,
+        #0d0d0e 80%
+      );
+      background-image: -moz-radial-gradient(
+        top,
+        circle cover,
+        #282828 0%,
+        #0d0d0e 80%
+      );
+      background-image: -o-radial-gradient(
+        top,
+        circle cover,
+        #282828 0%,
+        #0d0d0e 80%
+      );
+      background-image: radial-gradient(top, circle cover, #282828 0%, #0d0d0e 80%);
+}
