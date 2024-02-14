@@ -1,8 +1,4 @@
-.container-planet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.section-planet {
     background-image: -webkit-radial-gradient(
         bottom,
         circle cover,
@@ -23,3 +19,55 @@
       );
       background-image: radial-gradient(top, circle cover, #282828 0%, #0d0d0e 80%);
 }
+
+.container-planet {
+    height: 75vh;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 50px;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.container-button {
+    height: 50px;
+    width: 300px; 
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+}
+
+.planet {
+    height: 50vh;
+    width: 40%; 
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.planet-info {
+    height: 30vh;
+    width: 35%; 
+    background-color: antiquewhite;
+}
+
+
+.sun {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%; /* Posiciona el sol en el centro verticalmente */
+    left: 50%; /* Posiciona el sol en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el sol correctamente */
+    border: 1px solid #e96214a0;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-image: var(--sun-image);
+    box-shadow: #db590378 0px 30px 60px 20px, #f4880df3 0px 28px 36px -28px;
+    transform: var(--sun-tilt) scale(1.2);
+    animation: planetRotate calc(var(--sun-day) * 0.1s) linear infinite;
+}
+
