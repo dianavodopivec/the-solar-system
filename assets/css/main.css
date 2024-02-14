@@ -27,6 +27,7 @@ main {
     background-image: radial-gradient(bottom, circle cover, #282828 0%, #0d0d0e 80%);
 }
 
+
 .card {
     height: 400px;
     width: 300px;
@@ -482,3 +483,4 @@ main {
     z-index: 1;
     background: radial-gradient( circle at 30% 50%, #ece9e95d 0%, rgba(255, 255, 255, 0) 65% );
 }
+
