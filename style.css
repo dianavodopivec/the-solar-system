@@ -75,6 +75,30 @@ body {
   --pluto-day: 153.3;
 }
 
+/* CSS SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 7px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #151414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #393939;
+  transition: background 0.3s ease-in-out;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #919191;
+}
+
 h1 {
   font-size: 120px;
   font-weight: 800;

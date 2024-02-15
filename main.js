@@ -12,11 +12,8 @@ document.addEventListener("DOMContentLoaded", e => {
   clockFuncionality();
   //earthChanges();
 });
-const lenis = new Lenis();
 
-lenis.on("scroll", e => {
-  console.log(e);
-});
+const lenis = new Lenis();
 
 lenis.on("scroll", ScrollTrigger.update);
 
