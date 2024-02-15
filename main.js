@@ -1,7 +1,9 @@
 import { clockFuncionality } from "./assets/scripts/clock.js";
+const $geolocationContainer = document.getElementById("geolocation-info");
 const $title = document.querySelector("h1");
 const $title2 = document.querySelector("h2");
-const $geolocationContainer = document.getElementById("geolocation-info");
+const $star = document.querySelector(".button-play");
+const $containerInfo = document.querySelector(".container-info");
 /*import { earthChanges 
 } from "./assets/scripts/earthChanges.js";*/
 
@@ -64,7 +66,6 @@ tl.to(".wrap-scroll", {
 gsap.ticker.lagSmoothing(0);
 
 gsap.to($title, {
-  opacity: 1,
   scrollTrigger: {
     trigger: ".container-planet",
     start: "top, bottom",
@@ -74,10 +75,10 @@ gsap.to($title, {
   },
   y: -80,
   scale: 0.95,
+  opacity: 0,
 });
 
 gsap.to($title2, {
-  opacity: 1,
   scrollTrigger: {
     trigger: ".container-planet",
     start: "top, bottom",
@@ -87,9 +88,23 @@ gsap.to($title2, {
   },
   y: -100,
   scale: 0.95,
+  opacity: 0,
 });
 
-async function getGeolocation() {
+gsap.to($star, {
+  scrollTrigger: {
+    trigger: ".container-planet",
+    start: "top, bottom",
+    end: "+=1200",
+    toggleActions: "restart pause reverse pause",
+    scrub: 0,
+  },
+  y: 200,
+  scale: 0.55,
+  opacity: 0,
+});
+
+const getGeolocation = async () => {
   if (navigator.geolocation) {
     try {
       const position = await new Promise((resolve, reject) => {
@@ -117,6 +132,6 @@ async function getGeolocation() {
   } else {
     $geolocationContainer.innerText = "geolocation locked";
   }
-}
+};
 
 getGeolocation();
