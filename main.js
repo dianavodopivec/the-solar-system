@@ -110,7 +110,7 @@ async function getGeolocation() {
       const town = data.address.town;
       console.log(data.address);
       const formattedCountry = country.toUpperCase().slice(0, 3);
-      $geolocationContainer.innerText = `${formattedCountry} ${state} ${town}`;
+      $geolocationContainer.innerText = `${formattedCountry} ${state} ${town}`;
     } catch (error) {
       console.error(error.message);
     }
@@ -119,4 +119,4 @@ async function getGeolocation() {
   }
 }
 
-getGeolocation();
+getGeolocation()
