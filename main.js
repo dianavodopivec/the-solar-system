@@ -107,14 +107,10 @@ async function getGeolocation() {
       const data = await response.json();
       const country = data.address.country;
       const state = data.address.state;
-      const town =
-        data.address.town ||
-        data.address.state_district ||
-        data.address.suburb ||
-        data.address.postcode;
+
       console.log(data.address);
       const formattedCountry = country.toUpperCase().slice(0, 3);
-      $geolocationContainer.innerText = `${formattedCountry} ${state} ${town}`;
+      $geolocationContainer.innerText = `${formattedCountry} ${state}`;
     } catch (error) {
       console.error(error.message);
     }
