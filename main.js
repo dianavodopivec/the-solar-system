@@ -114,6 +114,8 @@ async function getGeolocation() {
     } catch (error) {
       console.error(error.message);
     }
+  } else {
+    $geolocationContainer.innerText = "";
   }
 }
 
