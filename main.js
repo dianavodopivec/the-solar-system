@@ -111,9 +111,6 @@ async function getGeolocation() {
       console.log(data.address);
       const formattedCountry = country.toUpperCase().slice(0, 3);
       $geolocationContainer.innerText = `${formattedCountry} ${state} ${town}`;
-      if ($geolocationContainer.textContent === "undefined") {
-        $geolocationContainer.innerText = "geolocation locked";
-      }
     } catch (error) {
       console.error(error.message);
     }
