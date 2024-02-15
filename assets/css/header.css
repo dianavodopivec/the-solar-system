@@ -6,7 +6,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
   background: #282537;
   background-image: -webkit-radial-gradient(
     top,
@@ -41,7 +40,8 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: transparent;
-  -webkit-box-reflect: below 15px linear-gradient(transparent, transparent, #0000001d);
+  -webkit-box-reflect: below 15px
+    linear-gradient(transparent, transparent, #0000001d);
 }
 
 .svg-button {
