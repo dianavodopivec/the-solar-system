@@ -4,6 +4,9 @@ const $title2 = document.querySelector("h2");
 const $geolocationContainer = document.getElementById("geolocation-info");
 /*import { earthChanges 
 } from "./assets/scripts/earthChanges.js";*/
+/*import { earthChanges } from "./assets/scripts/earthChanges.js";*/
+const $title = document.querySelector("h1");
+const $title2 = document.querySelector("h2");
 
 //To execute js code that interacts with the DOM
 document.addEventListener("DOMContentLoaded", e => {
@@ -76,6 +79,21 @@ gsap.to($title, {
   scale: 0.95,
 });
 
+gsap.ticker.lagSmoothing(0);
+
+gsap.to($title, {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".container-planet",
+    start: "top, bottom",
+    end: "+=400",
+    toggleActions: "restart pause reverse pause",
+    scrub: 1,
+  },
+  y: -80,
+  scale: 0.95,
+});
+
 gsap.to($title2, {
   opacity: 1,
   scrollTrigger: {
@@ -118,3 +136,4 @@ async function getGeolocation() {
 }
 
 getGeolocation();
+
