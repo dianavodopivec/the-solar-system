@@ -11,12 +11,10 @@
   margin: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    
 }
 
 body {
   overflow-x: hidden;
-
 }
 
 :root {
@@ -87,6 +85,8 @@ h1 {
   color: rgb(16, 15, 15);
   text-shadow: rgb(116, 115, 115) 0px 1px 2px;
   -webkit-text-stroke: 2px rgb(106, 106, 106);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h2 {
@@ -97,6 +97,8 @@ h2 {
   color: rgb(16, 15, 15);
   text-shadow: rgb(116, 115, 115) 0px 1px 2px;
   -webkit-text-stroke: 2px #6a6a6a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h3 {
@@ -156,11 +158,12 @@ p {
 }
 
 @keyframes floatDown {
-0% {
-  transform: translateY(0);
-} 100% {
-  transform: translateY(20px);
-}
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
 }
 
 @keyframes noise {
